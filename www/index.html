@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta http-equiv="Refresh" content="0; url='https://example.com/'" />
-    <script>window.location.replace("https://example.com/");</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BID STORE</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:sans-serif;background:#0f172a;color:white;margin:0;padding:12px;padding-bottom:90px}
+h1{text-align:center;color:#facc15;margin:5px 0;font-size:26px}
+.sub{text-align:center;color:#cbd5e1;font-size:14px;margin-bottom:12px;line-height:1.5}
+.jadwal{background:#1e293b;border:1px solid #facc15;padding:14px;border-radius:12px;text-align:center;margin:10px 0;line-height:1.7;font-size:14px}
+.jadwal b{color:#facc15}
+.banner{background:linear-gradient(90deg,#facc15,#f97316);color:black;padding:12px;border-radius:12px;text-align:center;margin:18px 0 10px;font-weight:bold;font-size:16px}
+.list{display:flex;flex-direction:column;gap:10px}
+.card{background:white;color:#111;padding:16px;border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.card h3{margin:0 0 4px 0;font-size:16px}
+.card p{font-size:13px;color:#555;margin:0;line-height:1.4}
+.card button{background:#22c55e;border:none;padding:12px 20px;border-radius:10px;font-weight:bold;font-size:14px;min-width:90px}
+.card.joki{background:#fef9c3;border:2px solid #facc15}
+.card.joki button{background:#f97316;color:white}
+.wa{position:fixed;bottom:12px;left:12px;right:12px;background:#25D366;color:white;text-align:center;padding:14px;border-radius:30px;font-weight:bold;font-size:16px}
+</style>
 </head>
-<body style="margin:0;padding:0;background-color:#ffffff;display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;">
-    Redirecting...
+<body>
+<h1>BID STORE</h1>
+<div class="sub">Top Up ML dan FF + Joki All Game Roblox<br>Murah - Cepat - Aman</div>
+<div class="jadwal"><b>JADWAL BUKA BID STORE</b><br>Senin - Kamis : <b>Buka Jam 15.00 WIB</b><br>Jumat s/d Minggu : <b>OPEN 24 JAM!</b></div>
+<div class="banner">TOP UP GAME</div>
+<div class="list">
+<div class="card"><div><h3>Mobile Legends</h3><p>Diamond MLBB - Mulai Rp 5.000</p></div><button onclick="pesan('Top Up Mobile Legends')">Beli</button></div>
+<div class="card"><div><h3>Free Fire</h3><p>Diamond FF - Mulai Rp 1.000</p></div><button onclick="pesan('Top Up Free Fire')">Beli</button></div>
+</div>
+<div class="banner">JOKI ALL GAME ROBLOX</div>
+<div class="list">
+<div class="card joki"><div><h3>Joki 1 Hari</h3><p>All Game Roblox - Rp 7.000</p></div><button onclick="pesan('Joki All Game Roblox 1 Hari - Rp 7.000')">Order</button></div>
+<div class="card joki"><div><h3>Joki 2 Hari</h3><p>All Game Roblox - Rp 9.000</p></div><button onclick="pesan('Joki All Game Roblox 2 Hari - Rp 9.000')">Order</button></div>
+<div class="card joki"><div><h3>Joki 3 Hari</h3><p>All Game Roblox - Rp 13.000</p></div><button onclick="pesan('Joki All Game Roblox 3 Hari - Rp 13.000')">Order</button></div>
+<div class="card joki"><div><h3>Joki 7 Hari</h3><p>All Game Roblox - Rp 20.000</p></div><button onclick="pesan('Joki All Game Roblox 7 Hari - Rp 20.000')">Order</button></div>
+</div>
+<div class="wa" onclick="pesan('Halo BID STORE! Saya mau tanya-tanya')">CHAT WA SEKARANG</div>
+<script>
+function pesan(p){
+var nomor = "6281959890498";
+window.open('https://wa.me/'+nomor+'?text='+encodeURIComponent('Halo BID STORE! Saya mau '+p));
+}
+</script>
 </body>
 </html>
